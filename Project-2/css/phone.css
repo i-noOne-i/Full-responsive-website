@@ -1,0 +1,90 @@
+/* Navigation Section  */
+#navbar{
+    flex-direction: column;
+}
+#logo img{
+    height: 40px;
+    width: 60px;
+    margin: 0px 6px;
+}
+#logo{
+    margin: 3px 34px;
+
+}
+#navbar::before {
+    height: 80px;
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 12px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* Home Section  */
+#home{
+    height: 200px;
+    padding: 3px 30px;
+}
+#home::before{
+    height: 272px;
+}
+#home p{
+    font-size: 0.8rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+}
+h1.h-primary{
+    font-size: 20px;
+}
+.h-secondary{
+    font-size: 20px;
+}
+
+/* Services Section */
+#services{
+    flex-direction: column;
+}
+#services .box img{
+    height: 80px;
+    width: 80px;
+}
+
+#services .box {
+    margin: 3px auto;
+    height: 300px;
+    width: 298px;
+}
+.services-container::before {
+    height: 1579px;
+}
+#services .box p{
+    font-size: .9rem;
+}
+/* Clients Section  */
+#clients{
+flex-wrap: wrap;
+}
+#client img{
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px;
+}
+/* Contact Section */
+
+/* Footer Section */
+
+.btn{
+    font-size: 1rem;
+    padding: 0px 5px;
+}
+.btn:hover{
+    font-size: 1rem;
+    padding: 0px 5px;
+}
