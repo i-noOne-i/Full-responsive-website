@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.logo img{
+    width: 33%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 18px 26px;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.rightNav{
+    /* background-color: hotpink; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+
+}
+#search{
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 9px;
+}
+.background{
+    background: rgb(0, 0, 0, 0.7) url(/img/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+
+}
+.firstSection{
+    height: 100vh;
+}
+.firstHalf{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.secondHalf{
+    width: 30%;
+}
+.secondHalf img{
+    width: 25vw;
+    border: 3px solid white;
+    border-radius: 18px;
+    display: block;
+    margin: auto;
+    height: 45vh;
+    margin-left: 30px;
+}
+
+
+.text-big{
+    font-size: 1.9rem;
+    padding: 18px 3px;}
+.text-small{
+    font-size: 1.1rem;
+    padding: 2px 0;
+}
+.btn{
+    padding: 8px 23px;
+    border-radius: 15px;
+    margin: 15px 4px;
+    font-size: 18px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.section{
+    display: flex;
+    height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+.Left{
+    flex-direction: row-reverse;
+    
+}
+.Left .thumbnail img{
+    margin-right: 20px;
+}
+.para{
+    padding: 0 25px;
+
+}
+.thumbnail img{
+    margin-left: 20px;
+    height: 45vh;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+
