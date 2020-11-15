@@ -147,7 +147,7 @@ nav ul li a{
     font-weight: 100;
     color: #009688;
 }
-features-desc{
+.features-desc{
     display: flex;
     align-items: center;
     margin-bottom: 40px;
@@ -160,9 +160,58 @@ features-desc{
     width: 70%;
     border-radius: 10px;
 }
+.features-icon .fas{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    color: #009688;
+}
+.features-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
 
-
-
+/* -------------Services-------------*/
+#services{
+    width: 100%;
+    padding: 70px 0;
+    background: #e1f1f8fd;
+}
+.service-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-service{
+    display: flex;
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 8px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), #009687bd);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
 
 
 
@@ -179,5 +228,17 @@ features-desc{
     .banner-btn a{
         display: block;
         margin: 20px auto;
+    }
+    .title-text h1{
+        font-size: 1.5rem;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .features-img {
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%;
     }
 }
