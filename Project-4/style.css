@@ -95,6 +95,9 @@ nav ul li a{
     width: 20px;
     margin-top: 10px;
 }
+#menuBtn:hover{
+    cursor: pointer;
+}
 /* -------------Features------------- */
 #features{
     width: 100%;
@@ -212,6 +215,143 @@ nav ul li a{
 .single-service:hover .overlay{
     opacity: 1;
 }
+.service-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p{
+    font-size: 14px;
+}
+
+.single-service:hover .service-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+/* -----------------testimonial---------------- */
+#testimonial{
+    width: 100%;
+    padding: 70px 0px;
+}
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 2px #0096884d ;
+    cursor: pointer;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.fa-twitter{
+    color: turquoise;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.user-info small{
+    color: #009688;
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+/* ------------Footer--------------- */
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+
+.footer-row h1{
+    margin: 10px 0px;
+}
+.footer-row p{
+    line-height: 30px;
+}
+.footer-left .far,.footer-right .fas{
+    font-size: 20px;
+    margin: 10px;
+    color: #009688;
+}
+.footer-img{
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fab{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    color: #009688;
+    margin: 40px 5px 0 ;
+    cursor: pointer;
+}
+.social-links .fab:hover{
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+    transition: 0.6s;
+}
+.social-links p{
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+
+
 
 
 
@@ -241,4 +381,29 @@ nav ul li a{
     .features-img img{
         width: 100%;
     }
+
+    /* -------------Service-------------- */
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% !important;
+    }
+    /* ----------Testmonials--------------------- */
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+    /* --------------------footer---------------------- */
+    .footer-left,.footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
 }
