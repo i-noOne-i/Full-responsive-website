@@ -573,23 +573,18 @@ section.subscribe .container .right-subscribe{
 section.subscribe .container .left-subscribe{
     flex: 1;
 }
-section.contact-us .contact-info-wrapper{
-    padding: 4rem 0;
-    flex: 1;
+/* -----------------Contact------------- */
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    background: var(--light);
 }
-section.contact-us .map{
-    margin: 0.5rem 0.5rem;
-    flex: 1;
-    filter: grayscale(100%);
+.contact-info{
+    flex-basis: 30%;
+    margin: auto 1rem;
 }
-section.contact-us .map:hover{
-    filter: unset;
-}
-section.contact-us .map iframe{
-    border-radius: 4px;
-}
-section.contact-us{
-    padding: 0 0;
+.contact-info-h1{
+    flex-direction: column;
 }
 section.contact-us .contact-info{
     display: flex;
@@ -609,8 +604,60 @@ section.contact-us .contact-info > div > div > div{
 }
 section.contact-us .contact-info > div > div > div span:first-child{
     font-family: "raleway-bold";
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.25rem; 
 }
+/* ---------------Map---------------- */
+.map{
+    margin: 0.5rem 0.5rem;
+    filter: grayscale(100%);
+    flex-basis: 40%;
+}
+.map:hover{
+    filter: unset;
+}
+.map iframe{
+    border-radius: 4px;
+}
+.contact-form{
+    flex-basis: 30%;
+    margin: 2rem;    
+}
+.contact-form h1{
+    padding-bottom: 0.25rem;
+}
+.contact-form hr{
+    border: 1px solid var(--secondary);
+    opacity: 1;
+    margin: 0 9rem 1rem 9rem;
+}
+.contact-input input,.contact-input textarea{
+    border: none;
+    outline: none;
+    margin: 0.50rem;
+    border-radius: 4px;
+    font-family: "raleway-regular";
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+.contact-input textarea{
+    height: 10vh;
+    width: 100%;
+}
+.contact-input > div > input{
+    width: 100%;
+}
+.email-number{
+    width: 100%;
+}
+.email-number > div > input{
+    width: 100%;
+}
+.contact-form button{
+    margin: 0.5rem;
+    width: 30%;
+}
+
+/* -------------------Footer------------------- */
 footer{
     background: var(--footer);
     padding: 4rem 0;
