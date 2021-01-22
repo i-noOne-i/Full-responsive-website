@@ -1,16 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Age Calculator | FREE Age Calculator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Gen Websites | Next gen websites will look like this</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./images/circled-chevron-right.png" type="image/x-icon">
 </head>
 <body>
-  <label for="birthDate">Birth Date</label>
-  <input id="birthDate" type="text" placeholder="Birth Date" name="birthDate" onkeyup="calculateAge()">
-
-  <p id="calculatedAge"></p>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <a href="/" id="navbarLogo">
+                <i class="fas fa-gem"></i>NEXT</a>
+            <div class="navbarToggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem">
+                    <a href="/" class="navbarLinks">Home</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="/tech.html" class="navbarLinks">Tech</a>
+                </li>
+                <li class="navbarItem">
+                    <a href="/" class="navbarLinks">Products</a>
+                </li>
+                <li class="navbarBtn">
+                    <a href="/" class="button">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="mainContainer">
+            <div class="mainContent">
+                <h1>NEXT GENERATION</h1>
+                <h2>TECHNOLOGY</h2>
+                <p>See what make us different</p>
+                <button class="mainBtn"><a href="/">Get Started</a></button>
+            </div>
+            <div class="mainImgContainer">
+                <img id='mainImg' src="/My Projects/Ptoject-6/images/pic1.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <h1>See what the hype is about</h1>
+        <div class="servicesConatainer">
+            <div class="servicesCards">
+                <h2>Expirience</h2>
+                <p>AI Powered Technology</p>
+                <button>Get Started</button>
+            </div>
+            <div class="servicesCards">
+                <h2>Are You Ready?</h2>
+                <p>Take a leap</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footerContainer">
+        <div class="footerLinks">
+            <div class="fotterLinkWrapper">
+                <div class="FooterLinkItems">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonals</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investments</a>
+                    <a href="/">Terms of Services</a>
+                </div>
+                <div class="FooterLinkItems">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                    <a href="/">Sponserships</a>
+                </div>
+            </div>
+            <div class="fotterLinkWrapper">
+                <div class="FooterLinkItems">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Video</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                    <a href="/">Influencer</a>
+                </div>
+                <div class="FooterLinkItems">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">YouTube</a>
+                    <a href="/">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="socialMedia">
+            <div class="socialMediaWrap">
+                <div class="footerLogo">
+                    <a href="/" id="footerLogo"><i class="fas fa-gem"></i>NEXT</a>
+                </div>
+                <p class="websiteRight">NEXT 2021, All rights reserved</p>
+                <div class="socialIcons">
+                    <a href="/" class="socialIconLink" target="blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="socialIcons">
+                    <a href="/" class="socialIconLink" target="blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="socialIcons">
+                    <a href="/" class="socialIconLink" target="blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="socialIcons">
+                    <a href="" class="socialIconLink" target="blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="socialIcons">
+                    <a href="" class="socialIconLink" target="blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 </html>
