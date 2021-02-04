@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  font-family: var(--poppin-font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --white-color: #fff;
+  --nav-red-color: #ff005e;
+  --nav-blue-color: #00ffad;
+  --poppin-font: "Poppins", sans-serif;
+  --ubuntu-font: "Ubuntu", sans-serif;
+  --title-font: "Roboto", sans-serif;
+  --logo-font: "Potta One", cursive;
+  --hover-color: #e2e0e0;
+  --gradient-color: 135deg, #ff0459, #073a52;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#6d9e6d));
+  background: linear-gradient(to bottom, #fff, #6d9e6d);
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  background: #424052;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.navbarLogo {
+  float: left;
+  font-size: 2rem;
+  padding-left: 1rem;
+  font-family: var(--logo-font);
+  font-weight: bold;
+  background: linear-gradient(135deg, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.navbarLogo span {
+  font-family: var(--ubuntu-font);
+  background: linear-gradient(135deg, #1434e9, #269add, #24e2b3, #13d81d);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.navbarItems {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.navbarItems a {
+  padding: 0 1rem;
+  color: var(--white-color);
+}
+
+.navbarItems a:hover {
+  color: var(--hover-color);
+}
+
+.navbarRight {
+  float: right;
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.navbarRight img {
+  width: 2.2vw;
+  margin-right: 1rem;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.navbarRight img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn {
+  background: linear-gradient(60deg, #56af69, #009b1a);
+  width: 80px;
+  height: 36px;
+  margin: 0 1rem;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--white-color);
+}
+
+.btn:hover {
+  background: linear-gradient(60deg, #abf5bb, #26ac3c);
+}
+
+.btn:hover a {
+  color: var(--hover-color);
+}
+
+.sellerBtn {
+  background: linear-gradient(135deg, #5ed3f7, #2320dd);
+}
+
+.sellerBtn:hover {
+  background: linear-gradient(135deg, #89e0fa, #3633d3);
+}
+
+.sellerBtn:hover a {
+  color: var(--hover-color);
+}
+
+.signInBtn {
+  background: linear-gradient(135deg, #ff887e, #ff000d);
+}
+
+.signInBtn:hover {
+  background: linear-gradient(135deg, #f1968d, #dd2f38);
+}
+
+.signInBtn:hover a {
+  color: var(--hover-color);
+}
+
+.navbarItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.navbarToggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbarToggle {
+    display: inline-block;
+  }
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+  background: #f1f1f1;
+  width: 70vw;
+  border-radius: 5px;
+}
+
+.search input {
+  width: 70vw;
+  height: 7vh;
+  border: none;
+  outline: none;
+  margin: 0 0.5rem;
+  background: #f1f1f1;
+}
+
+.search i {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.headerRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3rem;
+}
+
+.headerCol h1 {
+  font-size: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#f32170), color-stop(#ff6b08), color-stop(#cf23cf), to(#eedd44));
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.headerCol p {
+  margin-top: 2rem;
+}
+
+.headerCol img {
+  margin: 2rem 0;
+}
+
+.men {
+  background: radial-gradient(#fff, #6d9e6d);
+}
+
+.title {
+  font-size: 4rem;
+  color: var(--white-color);
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#f32170), color-stop(#ff6b08), color-stop(#cf23cf), to(#eedd44));
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menCol {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "title colContent colContent colContent";
+  margin-top: 2rem;
+}
+
+.menColTitleH1 {
+  font-size: 2.5rem;
+}
+
+.menColTitleH1 h1 {
+  text-align: center;
+}
+
+.menColTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 3rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4121f3), color-stop(#08f7ff), color-stop(#2cf357), to(#5bd116));
+  background: linear-gradient(to bottom, #4121f3, #08f7ff, #2cf357, #5bd116);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menColContentContainer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: colContent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menColContent {
+  margin: 1rem;
+}
+
+.menColContent img {
+  width: 18vw;
+  height: 50vh;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.menColContent img:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.menColContent h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #861400;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #bdbcc2;
+}
+
+.footer {
+  background: #2b1f1f;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerIcon {
+  margin: 1rem 0;
+}
+
+.footerIcon img {
+  height: 2.5vh;
+  width: 2vw;
+}
+
+.footerIcon a {
+  font-size: 1.3rem;
+  padding-left: 0.6rem;
+}
+
+.invert:first-child img {
+  -webkit-filter: invert(100);
+          filter: invert(100);
+}
+
+.invert:nth-child(2) img {
+  -webkit-filter: invert(100);
+          filter: invert(100);
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app img {
+  width: 12vw;
+  display: block;
+  margin: 0.5rem 0.5rem;
+}
+
+.app div {
+  width: 100%;
+  margin: auto 0;
+}
+
+.footerTitle {
+  margin: 2rem;
+}
+
+.footerTitle h5 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.logiscitsImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  background: #301e1e;
+}
+
+.designer {
+  font-size: 12px;
+  text-align: end;
+  padding: 0 1rem 0 0;
+}
+/*# sourceMappingURL=style.css.map */
