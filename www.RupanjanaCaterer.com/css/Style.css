@@ -107,6 +107,7 @@ body {
   color: rgb(44, 23, 238);
   background-color: #fac564;
   border: 0.1px solid rgb(126, 120, 120);
+  outline: none;
   border-radius: 15px;
   font-family: "Philosopher", sans-serif;
   font-size: 1.1rem;
