@@ -13,33 +13,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-
-
-
-
-<style>
-
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <body>
+    <!-- Scroll Indicator -->
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="scrollBar"></div>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
-        <div id="logo">
-            <img src="./img/logo.png" alt="Rupanjana Caterer">
-
-            <div class="logo-title">Rupanjana Caterer</div>
+        <div class="navbarContainer">
+            <a href="#home" id="navbarLogo">
+                <img src="../www.RupanjanaCaterar.com - 2/img/Rupanjana logo 2.png" alt="Logo"></a>
+            <div class="navbarToggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbarMenu">
+                <li class="navbarItem"><a href="#home" class="navbarLinks">Home</a></li>
+                <li class="navbarItem"><a href="#menu" class="navbarLinks">Menu</a></li>
+                <li class="navbarItem"><a href="#about" class="navbarLinks">About</a></li>
+                <li class="navbarItem"><a href="#contact" class="navbarLinks">Contact</a></li>
+            </ul>
         </div>
-        <ul class="list">
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="#menu">Menu</a></li>
-            <li class="item"><a href="#partner">Our Partners</a></li>
-            <li class="item"><a href="#about">About Us</a></li>
-            <li class="item"><a href="#contact">Contact us</a></li>
-        </ul>
-        <button class="btn">
-            <img src="./img/call.png" alt="Call">Call Us Now
-        </button>
     </nav>
+
     <section id="home">
         <div>
             <h1>Welcome to Rupanjana Catering Services.</h1>
@@ -48,12 +50,10 @@
             <p> Rupanjana Caterer are specialized in offering cost-effective Catering Services for Wedding, Corporate
                 parties and other parties. We offer this service at the market leading price and help the clients to
                 make the event the most remarkable in their life.</p>
-            <p>
-                We possess a team of well trained chefs and cooks who are expert and possess wide experience in their
-                work. They are selected from the best hotel management institutes. Our master chefs and cooks have a
-                wide experience in the hotel industry and have been associated with various reputed Indian hotels and
-                restaurants. They are highly adept in preparing all types of Indian & International cuisines with
-                extreme ease and finesse.</p>
+            <p> Rupanjana Caterer are specialized in offering cost-effective Catering Services for Wedding, Corporate
+                parties and other parties. We offer this service at the market leading price and help the clients to
+                make the event the most remarkable in their life.</p>
+
         </div>
         <button class="btn-home">Book Now</button>
     </section>
@@ -61,62 +61,74 @@
         <h1 class="h1-primary">Menu</h1>
         <div class="menu-container">
             <div class="menu-item">
-                <img src="./img/001-starter.png" alt="">
+                <div class="menuImg">
+                    <img src="./img/001-starter.png" alt="">
+                </div>
                 <h3 class="h1-secondary">Starters</h3>
-                <ul>
-                    <li>Macher Chop</li>
-                    <li>Phulkopir Singara</li>
-                    <li>Veg Pakora</li>
-                    <li>Chicken Pakora</li>
-                    <li>Baby Corn</li>
-                    <li>Cheese Ball</li>
-                    <li>Fried Idli</li>
-                    <li>Paneer Achari Tikka</li>
-                    <li>Potato Nugguts</li>
-                    <li>Chicken Dumsticks</li>
-                </ul>
+                <div>
+                    <ul class="menuList">
+                        <li>Macher Chop</li>
+                        <li>Phulkopir Singara</li>
+                        <li>Veg Pakora</li>
+                        <li>Chicken Pakora</li>
+                        <li>Baby Corn</li>
+                        <li>Cheese Ball</li>
+                        <li>Fried Idli</li>
+                        <li>Paneer Achari Tikka</li>
+                        <li>Potato Nugguts</li>
+                        <li>Chicken Dumsticks</li>
+                    </ul>
+                </div>
             </div>
             <div class="menu-item">
-                <img src="./img/maincourse.png" alt="">
+                <div class="menuImg"><img src="./img/main course.png" alt="">
+                </div>
                 <h3 class="h1-secondary">Main course</h3>
-                <ul>
-                    <li>Koraisutir Kochuri</li>
-                    <li>Chana Masala </li>
-                    <li>Vegetable Fried Rice </li>
-                    <li>Katla Macher Kalia</li>
-                    <li>Navratna Veg Curry</li>
-                    <li>Chicken Kosha</li>
-                    <li>Mutton Kosha</li>
-                    <li>Fried Rice</li>
-                    <li>Chilli Chicken</li>
-                    <li>Mutton Rogan Josh</li>
-                </ul>
+                <div>
+                    <ul class="menuList">
+                        <li>Koraisutir Kochuri</li>
+                        <li>Chana Masala </li>
+                        <li>Vegetable Fried Rice </li>
+                        <li>Katla Macher Kalia</li>
+                        <li>Navratna Veg Curry</li>
+                        <li>Chicken Kosha</li>
+                        <li>Mutton Kosha</li>
+                        <li>Fried Rice</li>
+                        <li>Chilli Chicken</li>
+                        <li>Mutton Rogan Josh</li>
+                    </ul>
+                </div>
             </div>
             <div class="menu-item">
-                <img src="./img/dessert.png" alt="">
+                <div class="menuImg"><img src="./img/dessert.png" alt="">
+                </div>
                 <h3 class="h1-secondary">Desserts</h3>
-                <ul>
-                    <li>Dry Fruits Chatni</li>
-                    <li>Papad</li>
-                    <li>Misti Dahi</li>
-                    <li>Rosogolla</li>
-                    <li>Makha Sandesh</li>
-                    <li>Rabri With Malpoa</li>
-                    <li>Nalen Gurer Ice Cream With Jhola Gur </li>
-                    <li>Rasomalai</li>
-                    <li>Kalakad</li>
-                    <li>Gulab Jamun </li>
-                </ul>
+                <div>
+                    <ul class="menuList">
+                        <li>Dry Fruits Chatni</li>
+                        <li>Papad</li>
+                        <li>Misti Dahi</li>
+                        <li>Rosogolla</li>
+                        <li>Makha Sandesh</li>
+                        <li>Rabri With Malpoa</li>
+                        <li>Nalen Gurer Ice Cream</li>
+                        <li>Rasomalai</li>
+                        <li>Kalakad</li>
+                        <li>Gulab Jamun </li>
+                    </ul>
+                </div>
             </div>
+
         </div>
     </section>
     <section id="partner">
         <h3 class="h1-primary">Our Partners</h3>
         <div class="partner-item">
             <marquee behavior="scroll" direction="left" scrollamount="20">
-                <img class="image" src="./img/google_PNG19644.png" alt="Our Partners" width="400px" height="200px">
-                <img class="image" src="./img/JW Marriot.png" alt="Our Partners" width="400px" height="200px">
-                <img class="image" src="./img/microsoft-logo-png-2411.png" alt="Our Partners" width="400px"
+                <img class="partnerImage" src="./img/google_PNG19644.png" alt="Our Partners" width="400px"
+                    height="200px">
+                <img class="partnerImage" src="./img/JW Marriot.png" alt="Our Partners" width="400px" height="200px">
+                <img class="partnerImage" src="./img/microsoft-logo-png-2411.png" alt="Our Partners" width="400px"
                     height="200px">
                 <img src="./img/swiggy_client.png" alt="Our Partners" width="200px" height="200px">
                 <img src="./img/zomato-logo-0.png" alt="Our Partners" width="200px" height="200px">
@@ -125,27 +137,32 @@
     </section>
     <section id="about">
         <h1>About Us</h1>
-        <div class="para">
-            <p>The journey started in 2003, at a time when the city did not boast a single
-                stand-alone eatery serving
-                exclusive Bengali cuisine. The gateway to the culinary delights of Bengal opened once 6 Ballygunge Place
-                happened.</p>
-            <p> Housed in the bungalow of a former Rai Bahadur, steeped in an aura of tradition and
-                heritage, 6 Ballygunge
-                Place changed the gastronomic landscape of the city with its curated menu. From the earliest Bengali
-                cookbook of Pragya Sundari Devi to references from Vaishnav literature, all available resources were
-                researched under the able guidance of Chef Sushanta Sengupta which then found its way to our elaborate
-                spread.</p>
-            <p> The sheen of our fine crockery and cutlery, the best in terms of ingredients, top of
-                the line service staff
-                in crisp designer uniforms and thorough professionalism ensured that 6 Ballygunge Place became a
-                preferred
-                destination for authentic Bengali cuisine.</p>
+        <div class="aboutContainer">
+            <div class="image">
+                <img src="./img/buffet-315691_1280.jpg" alt="">
+            </div>
+            <div class="para">
+                <p>The journey started in 2003, at a time when the city did not boast a single
+                    stand-alone eatery serving
+                    exclusive Bengali cuisine. The gateway to the culinary delights of Bengal opened once 6 Ballygunge
+                    Place
+                    happened.</p>
+                <p> Housed in the bungalow of a former Rai Bahadur, steeped in an aura of tradition and
+                    heritage, 6 Ballygunge
+                    Place changed the gastronomic landscape of the city with its curated menu. From the earliest Bengali
+                    cookbook of Pragya Sundari Devi to references from Vaishnav literature, all available resources were
+                    researched under the able guidance of Chef Sushanta Sengupta which then found its way to our
+                    elaborate
+                    spread.</p>
+                <p> The sheen of our fine crockery and cutlery, the best in terms of ingredients, top of
+                    the line service staff
+                    in crisp designer uniforms and thorough professionalism ensured that 6 Ballygunge Place became a
+                    preferred
+                    destination for authentic Bengali cuisine.</p>
 
+            </div>
         </div>
-        <div class="image">
-            <img src="./img/buffet-315691_1280.jpg" alt="">
-        </div>
+
 
 
     </section>
@@ -161,10 +178,10 @@
             </div>
             <div class="contact-form">
                 <h1>Contact Details</h1>
-                <form>
-                    <input type="text" placeholder="Name" class="form-text">
-                    <input type="email" placeholder="E-mail" class="form-text">
-                    <textarea placeholder="Message" class="form-textarea"></textarea>
+                <form method="post" autocomplete="off" name="googleSheet">
+                    <input type="text" name="name" placeholder="Name" class="form-text" required>
+                    <input type="number" name="phone" placeholder="Phone No." class="form-text" required>
+                    <textarea name="message" placeholder="Message" class="form-textarea"></textarea>
                     <input type="submit" name="Submit" class="contact-btn">
                 </form>
             </div>
@@ -175,16 +192,17 @@
     <!-- Footer -->
     <footer>
         <div class="title">
-            <img src="./img/logo.png" alt="Rupanjana Caterer">
-            <h1>Rupanjana Caterer</h1>
+            <img src="../www.RupanjanaCaterar.com - 2/img/Rupanjana logo 1.png" alt="Rupanjana Caterer">
         </div>
-        <p> Copyright &copy; www.RupanJanaCaterar.com. All rights reserved!</p>
+        <p> Copyright &copy; www.RupanJanaCaterar.com <span> All rights reserved</span></p>
         <div class="footer-0-icon">
-            <img src="./img/002-facebook.png" alt="">
-            <img src="./img/003-twitter.png" alt="">
-            <img src="./img/004-instagram.png" alt="">
+            <img src="./img/facebook-square-color.svg" alt="">
+            <img src="./img/instagram-square-color.svg" alt="">
+            <img src="./img/youtube-color.svg" alt="">
+            <img src="./img/twitter-square-color.svg" alt="">
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
